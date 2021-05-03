@@ -455,6 +455,6 @@ app.all("*", (req, res) => {
   res.json("This endpoint does not exist.");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3100, () => {
   console.log("Go serveur 🚀");
 });
